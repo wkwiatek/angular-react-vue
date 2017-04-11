@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let p of productsService.products">
+  <li *ngFor="let p of products | async">
     <app-product
       [id]="p.id"
       [name]="p.name"
