@@ -10,8 +10,7 @@ const AddProductComponent = ({ onAddProductClick, history }) => {
   };
 
   return (
-    <LocalForm onSubmit={ handleAddProductSubmit }
-    >
+    <LocalForm onSubmit={ handleAddProductSubmit }>
       <Control.text model=".name" />
       <button>Submit</button>
     </LocalForm>

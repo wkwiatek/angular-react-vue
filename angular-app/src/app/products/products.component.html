@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let p of productsService.products">
+    <app-product
+      [id]="p.id"
+      [name]="p.name"
+      [isSoldOut]="p.isSoldOut"
+      (onBuyClick)="onBuyClick($event)"
+    >
+    </app-product>
+  </li>
+</ul>

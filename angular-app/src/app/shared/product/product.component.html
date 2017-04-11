@@ -1,0 +1,8 @@
+<div>
+  <span [style.textDecoration]="isSoldOut ? 'line-through' : 'none'">
+    {{ name }}
+  </span>
+  <button (click)="handleBuyClick(id)">
+    Buy
+  </button>
+</div>
